@@ -1,0 +1,645 @@
+
+#root{
+    background-image: url(./Media/tracy-adams-_mWreAf3b-A-unsplash.jpg);
+    background-size:cover;
+}
+
+@font-face{
+    font-family: rowdies-bold;
+    src: url(./Media/fonts/Rowdies/Rowdies-Bold.ttf)
+}
+@font-face{
+    font-family: rowdies-regular;
+    src:url(./Media/fonts/Rowdies/Rowdies-Regular.ttf)
+}
+/*Desktop Styling*/
+@media only screen and (min-width:1024px){
+
+#mainNav{
+background-color:blue;
+height: 50px;
+margin:0 auto;
+width: 100%;
+font-family: rowdies-bold;
+position:fixed;
+}
+.Wrapper .typedWords{
+    padding-top: 50px;
+    animation-name:animation;
+    animation-direction: forwards;
+    width:80%;
+    margin:0 auto;
+    animation-duration: 10s;
+    font-family: rowdies-bold; 
+    color:black;
+}.info{
+    margin:5% auto;
+}
+li{
+    color: white;
+    display: inline-block;
+    
+    margin-left:100px;
+    font-size: 20px;
+    line-height: 50px;
+    
+}
+.Wrapper{
+    width: 100%;
+    margin: auto auto;
+    height: 100vh;
+    background-size:cover;
+    padding-top:50px;
+}
+.Wrapper h1{
+    margin-top: 15vh;
+}
+.Wrapper a{
+    color: black;
+    animation-name:animation;
+    animation-duration: 5s;
+    font-family: rowdies-bold;
+}
+ul{
+    padding-right: 40px;
+    margin: 0 0 0 0;
+}
+h1{
+    animation-name:animation;
+    animation-duration: 5s;
+    font-family: rowdies-bold;
+}
+.h1{
+    font-size: 40px;
+    color: blanchedalmon;
+    background-color:whitesmoke;
+    animation-name: animation;
+    animation-duration: 5s;
+}
+p{
+    font-size: 25px;
+    font-family: rowdies-regular;
+    
+}
+.projectSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: none;
+    height: 100vh;
+}
+
+.projectSection img{
+    width:40%;
+}
+.projectsDiv{
+    height: 100vh;
+    padding-top: 50px;
+    font-family: rowdies-bold;
+    display: block;
+    background-color:black;
+    border-radius: 0 50px 0 0;
+}
+.projectSection div a img{
+    margin-top: 50%;
+}
+
+.site1:hover, .site2:hover, .site3:hover{
+    width: 50%;
+    border: 3px solid white;
+    border-radius: 5px 10px 5px 10px;
+}
+.site3{
+    background-color: wheat;
+}
+
+.contactDiv{
+    
+    padding-top: 50px;
+    font-family: rowdies-regular;
+    background-color: black;
+}
+.contactDiv p{
+    width: 70%;
+    color: white;
+    margin: 0 auto;
+}
+form{
+    margin-top: 4%;
+}
+
+input,label{
+    width: 25%;
+    height: 25px;
+    display: block;
+    margin:0 auto;
+    color:blue;
+    font-size:25px;
+    margin-top: 1%;
+    font-style: italic;
+    border-radius: 10px;
+    
+}
+input{
+    font-size: 20px;
+    font-style:normal;
+}
+.confirmationAppear{
+    display: block;
+    color:wheat;
+    animation: "anime" 4s
+}
+label{
+    color: white;
+}
+textarea{
+    width: 40%;
+    height: 100px;
+    color: blue;
+    margin-top: 1%;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.Wrapper .p1{
+    font-style: italic;
+    animation-name: animation;
+    animation-direction: normal;
+    animation-duration: 10s;
+    width:80%;
+    margin:0 auto;
+    line-height: 50px;
+
+    
+
+}
+a{
+    color:white;
+}
+a:hover{
+    color:gray;
+}
+button{
+    margin-top:2%;
+    border: solid;
+    border-color:white;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: medium;
+    cursor: pointer;
+    font-size: larger;
+}
+ @keyframes animation{
+     0%{
+         opacity: 0;
+         color: blue;
+     }
+
+     100%{
+         opacity:1 ;
+     }
+}
+.submission{
+     visibility: hidden;
+     color: wheat;
+}
+.error-msgs{
+    color: wheat;
+
+}
+@keyframes anime{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+}
+/*Ipad Styling*/
+@media only screen and (max-width:1023px) and (min-width:768px){
+    #root{
+        background-image: url(./Media/tracy-adams-_mWreAf3b-A-unsplash.jpg);
+        background-size:cover;
+    }
+    .info{
+    margin:5% auto;
+    }
+    #mainNav{
+        position: 0;
+        background-color:blue;
+        height: 120px;
+        margin:0 auto;
+        width: 100%;
+        font-family: rowdies-bold;
+        position:fixed;
+        z-index: 1000;
+    }
+
+    .Wrapper .typedWords{
+        padding-top: 50px;
+        animation-name:animation;
+        animation-direction: forwards;
+        width:80%;
+        margin:0 auto;
+        animation-duration: 10s;
+        font-family: rowdies-bold; 
+        color: navy;
+    }
+
+    ul{
+        padding: 0;
+        text-align: left;
+        padding-left: 10%;
+    }
+    li{
+        color: white;
+        display:block;
+        font-size: 17px;
+        line-height: 35px;
+    }
+    .Wrapper{
+        width: 90%;
+        margin: auto auto;
+        height: 100vh;
+        background-size:cover;
+        padding-top: 120px;
+    }
+    .Wrapper h1{
+        margin-top: 7vh;
+    }
+    .Wrapper a{
+        color: black;
+        animation-name:animation;
+        animation-duration: 5s;
+        font-family: rowdies-bold;
+    }
+    h1{ 
+        animation-name:animation;
+        animation-duration: 5s;
+        font-family: rowdies-bold;
+    }
+    .h1{
+        font-size: 20px;
+        color: blanchedalmon;
+        background-color:whitesmoke;
+        animation-name: animation;
+        animation-duration: 5s;
+    }
+    p{
+        font-size: 18px;
+        font-family: rowdies-regular;
+        
+    }
+    .projectSection{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: none;
+        height: 100vh;
+
+    }
+    
+    .projectSection img{
+        width:40%;
+    }
+    .projectsDiv{
+        height: 100vh;
+        padding-top: 130px;
+        font-family: rowdies-bold;
+        display: block;
+        background-color: black;
+        border-radius: 0 35px 0 0;
+    }
+    
+    .site1:hover, .site2:hover, .site3:hover{
+        width: 50%;
+    }
+    .site3{
+        background-color: wheat;
+    }
+    
+    .contactDiv{
+        
+        padding-top: 130px;
+        font-family: rowdies-regular;
+        background-color: black;
+    }
+    .contactDiv p{
+        width: 70%;
+        color: white;
+        margin: 0 auto;
+    }
+    form{
+        margin-top: 4%;
+    }
+    
+    input,label{
+        width: 50%;
+        height: 25px;
+        display: block;
+        margin:0 auto;
+        color:blue;
+        font-size:25px;
+        margin-top: 1%;
+        font-style: italic;
+        border-radius: 10px;
+        
+    }
+    input{
+        font-size: 15px;
+        font-style:normal;
+        color: blue;
+    }
+    .confirmationAppear{
+        display: block;
+        color:wheat;
+        animation: "anime" 4s
+    }
+    label{
+        color:white;
+        margin-top: 5%;
+    }
+    textarea{
+        width: 50%;
+        height: 100px;
+        color: blue;
+        margin-top: 1%;
+        border-radius: 10px;
+        font-size: 17px;
+        font-weight: bold;
+    }
+ 
+    .Wrapper .p1{
+        font-style: italic;
+        animation-name: animation;
+        animation-direction: normal;
+        animation-duration: 10s;
+        width:80%;
+        margin:0 auto;
+        line-height: 35px;
+        color:navy;
+        
+    
+    }
+    a{
+        color:white;
+    }
+    a:hover{
+        color:gray;
+    }
+    button{
+        margin-top:2%;
+        border: solid;
+        border-color:white;
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        font-size: medium;
+        cursor: pointer;
+        font-size: larger;
+    }
+     @keyframes animation{
+         0%{
+             opacity: 0;
+             color: blue;
+         }
+    
+         100%{
+             opacity:1 ;
+         }
+    }
+    .submission{
+         visibility: hidden;
+         color: wheat;
+    }
+    .error-msgs{
+        color: wheat;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    @keyframes anime{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+}
+
+/*Moblie Styling*/
+@media only screen and (max-width:767px){
+    #root{
+        background-image: url(./Media/tracy-adams-_mWreAf3b-A-unsplash.jpg);
+        background-size:cover;
+    }
+    #mainNav{
+        position: 0;
+        background-color:blue;
+        height: 120px;
+        margin:0 auto;
+        width: 100%;
+        font-family: rowdies-bold;
+        position:fixed;
+        z-index: 1000;
+    }
+    .info{
+        margin:5% auto
+    }
+    .Wrapper .typedWords{
+        padding-top: 50px;
+        animation-name:animation;
+        animation-direction: forwards;
+        width:80%;
+        margin:0 auto;
+        animation-duration: 10s;
+        font-family: rowdies-bold; 
+        color: navy;
+    }
+
+    ul{
+        padding: 0;
+        text-align: left;
+        padding-left: 10%;
+    }
+    li{
+        color: white;
+        display:block;
+        font-size: 17px;
+        line-height: 35px;
+    }
+    .Wrapper{
+        width: 90%;
+        margin: auto auto;
+        height: 100vh;
+        background-size:cover;
+        padding-top: 120px;
+    }
+    .Wrapper h1{
+        margin-top: 7vh;
+    }
+    .Wrapper a{
+        color: black;
+        animation-name:animation;
+        animation-duration: 5s;
+        font-family: rowdies-bold;
+    }
+    h1{ 
+        animation-name:animation;
+        animation-duration: 5s;
+        font-family: rowdies-bold;
+    }
+    .h1{
+        font-size: 20px;
+        color: blanchedalmon;
+        background-color:whitesmoke;
+        animation-name: animation;
+        animation-duration: 5s;
+    }
+    p{
+        font-size: 18px;
+        font-family: rowdies-regular;
+        
+    }
+    .projectSection{
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: none;
+        height: 100vh;
+    }
+    
+    .projectSection img{
+        width:40%;
+    }
+    .projectsDiv{
+        height: 100vh;
+        padding-top: 130px;
+        font-family: rowdies-bold;
+        display: block;
+        background-color:black;
+        border-radius: 0 25px 0 0;
+    }
+    
+    .site1:hover, .site2:hover, .site3:hover{
+        width: 50%;
+    }
+    .site3{
+        background-color: wheat;
+    }
+    
+    .contactDiv{
+        
+        padding-top: 130px;
+        font-family: rowdies-regular;
+        background-color: black;
+    }
+    .contactDiv p{
+        width: 70%;
+        color: white;
+        margin: 0 auto;
+    }
+    form{
+        margin-top: 4%;
+    }
+    
+    input,label{
+        height: 25px;
+        display: block;
+        margin:0 auto;
+        color:blue;
+        font-size:25px;
+        margin-top: 1%;
+        font-style: italic;
+        border-radius: 10px;
+        
+    }
+    input{
+        width:50%;
+        font-size: 15px;
+        font-style:normal;
+        color: blue;
+    }
+    .confirmationAppear{
+        display: block;
+        color:wheat;
+        animation: "anime" 4s
+    }
+    label{
+        color:white;
+        margin-top: 5%;
+    }
+    textarea{
+        width: 50%;
+        height: 100px;
+        color: blue;
+        margin-top: 1%;
+        border-radius: 10px;
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .Wrapper .p1{
+        font-style: italic;
+        animation-name: animation;
+        animation-direction: normal;
+        animation-duration: 10s;
+        width:80%;
+        margin:0 auto;
+        line-height: 35px;
+        color:navy;
+        
+    
+    }
+    a{
+        color:white;
+    }
+    a:hover{
+        color:gray;
+    }
+    button{
+        margin-top:2%;
+        border: solid;
+        border-color:white;
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        font-size: medium;
+        cursor: pointer;
+        font-size: larger;
+    }
+     @keyframes animation{
+         0%{
+             opacity: 0;
+             color: blue;
+         }
+    
+         100%{
+             opacity:1 ;
+         }
+    }
+    .submission{
+         visibility: hidden;
+         color: wheat;
+    }
+    .error-msgs{
+        color: wheat;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    @keyframes anime{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+    
+}
+
