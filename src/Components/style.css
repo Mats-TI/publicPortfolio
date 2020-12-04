@@ -97,7 +97,7 @@ p{
     font-family: rowdies-bold;
     display: block;
     background-color:black;
-    border-radius: 0 50px 0 0;
+    border-radius: 0 50px 0 50px;
 }
 .projectSection div a img{
     margin-top: 50%;
@@ -308,7 +308,7 @@ button{
         font-family: rowdies-bold;
         display: block;
         background-color: black;
-        border-radius: 0 35px 0 0;
+        border-radius: 0 35px 0 35px;
     }
     
     .site1:hover, .site2:hover, .site3:hover{
@@ -477,6 +477,7 @@ button{
         height: 100vh;
         background-size:cover;
         padding-top: 120px;
+        overflow: hidden;
     }
     .Wrapper h1{
         margin-top: 7vh;
@@ -521,7 +522,7 @@ button{
         font-family: rowdies-bold;
         display: block;
         background-color:black;
-        border-radius: 0 25px 0 0;
+        border-radius: 0 25px 0 25px;
     }
     
     .site1:hover, .site2:hover, .site3:hover{
@@ -586,9 +587,9 @@ button{
         animation-name: animation;
         animation-direction: normal;
         animation-duration: 10s;
-        width:80%;
+        width:100%;
         margin:0 auto;
-        line-height: 35px;
+        line-height: 30px;
         color:navy;
         
     
