@@ -18,14 +18,15 @@
     "react-scripts": "^4.0.0",
     "request": "^2.88.2"
   },
-  "homepage": "https://thapza101.github.io/publicPortfolio",
+  "homepage": "https://thapza101.github.io/",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build"
+    "eject": "react-scripts eject"
+
   },
   "eslintConfig": {
     "extends": "react-app"
