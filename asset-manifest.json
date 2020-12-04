@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/thapza101.github.io/publicPortfolio/static/css/main.981f2f0d.chunk.css",
+    "main.js": "/thapza101.github.io/publicPortfolio/static/js/main.2393ce4a.chunk.js",
+    "main.js.map": "/thapza101.github.io/publicPortfolio/static/js/main.2393ce4a.chunk.js.map",
+    "runtime-main.js": "/thapza101.github.io/publicPortfolio/static/js/runtime-main.93c3e835.js",
+    "runtime-main.js.map": "/thapza101.github.io/publicPortfolio/static/js/runtime-main.93c3e835.js.map",
+    "static/js/2.9b1ef8d1.chunk.js": "/thapza101.github.io/publicPortfolio/static/js/2.9b1ef8d1.chunk.js",
+    "static/js/2.9b1ef8d1.chunk.js.map": "/thapza101.github.io/publicPortfolio/static/js/2.9b1ef8d1.chunk.js.map",
+    "index.html": "/thapza101.github.io/publicPortfolio/index.html",
+    "static/css/main.981f2f0d.chunk.css.map": "/thapza101.github.io/publicPortfolio/static/css/main.981f2f0d.chunk.css.map",
+    "static/js/2.9b1ef8d1.chunk.js.LICENSE.txt": "/thapza101.github.io/publicPortfolio/static/js/2.9b1ef8d1.chunk.js.LICENSE.txt",
+    "static/media/Chess pic.2edb95c2.jpg": "/thapza101.github.io/publicPortfolio/static/media/Chess pic.2edb95c2.jpg",
+    "static/media/MainDC.0a5a0266.jpg": "/thapza101.github.io/publicPortfolio/static/media/MainDC.0a5a0266.jpg",
+    "static/media/style.css": "/thapza101.github.io/publicPortfolio/static/media/tracy-adams-_mWreAf3b-A-unsplash.3dfc96bc.jpg",
+    "static/media/gallery_logo.e39553c7.png": "/thapza101.github.io/publicPortfolio/static/media/gallery_logo.e39553c7.png",
+    "static/media/logo.103b5fa1.svg": "/thapza101.github.io/publicPortfolio/static/media/logo.103b5fa1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.93c3e835.js",
+    "static/js/2.9b1ef8d1.chunk.js",
+    "static/css/main.981f2f0d.chunk.css",
+    "static/js/main.2393ce4a.chunk.js"
+  ]
+}
