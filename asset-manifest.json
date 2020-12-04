@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.54d83370.chunk.css",
-    "main.js": "/static/js/main.f13c5bd5.chunk.js",
-    "main.js.map": "/static/js/main.f13c5bd5.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.291a5225.js",
-    "runtime-main.js.map": "/static/js/runtime-main.291a5225.js.map",
-    "static/js/2.9b1ef8d1.chunk.js": "/static/js/2.9b1ef8d1.chunk.js",
-    "static/js/2.9b1ef8d1.chunk.js.map": "/static/js/2.9b1ef8d1.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.54d83370.chunk.css.map": "/static/css/main.54d83370.chunk.css.map",
-    "static/js/2.9b1ef8d1.chunk.js.LICENSE.txt": "/static/js/2.9b1ef8d1.chunk.js.LICENSE.txt",
-    "static/media/Chess pic.2edb95c2.jpg": "/static/media/Chess pic.2edb95c2.jpg",
-    "static/media/MainDC.0a5a0266.jpg": "/static/media/MainDC.0a5a0266.jpg",
-    "static/media/style.css": "/static/media/tracy-adams-_mWreAf3b-A-unsplash.3dfc96bc.jpg",
-    "static/media/gallery_logo.e39553c7.png": "/static/media/gallery_logo.e39553c7.png",
-    "static/media/logo.103b5fa1.svg": "/static/media/logo.103b5fa1.svg"
+    "main.css": "/publicPortfolio/static/css/main.9f815803.chunk.css",
+    "main.js": "/publicPortfolio/static/js/main.09d4eaa7.chunk.js",
+    "main.js.map": "/publicPortfolio/static/js/main.09d4eaa7.chunk.js.map",
+    "runtime-main.js": "/publicPortfolio/static/js/runtime-main.9e684381.js",
+    "runtime-main.js.map": "/publicPortfolio/static/js/runtime-main.9e684381.js.map",
+    "static/js/2.9b1ef8d1.chunk.js": "/publicPortfolio/static/js/2.9b1ef8d1.chunk.js",
+    "static/js/2.9b1ef8d1.chunk.js.map": "/publicPortfolio/static/js/2.9b1ef8d1.chunk.js.map",
+    "index.html": "/publicPortfolio/index.html",
+    "static/css/main.9f815803.chunk.css.map": "/publicPortfolio/static/css/main.9f815803.chunk.css.map",
+    "static/js/2.9b1ef8d1.chunk.js.LICENSE.txt": "/publicPortfolio/static/js/2.9b1ef8d1.chunk.js.LICENSE.txt",
+    "static/media/Chess pic.2edb95c2.jpg": "/publicPortfolio/static/media/Chess pic.2edb95c2.jpg",
+    "static/media/MainDC.0a5a0266.jpg": "/publicPortfolio/static/media/MainDC.0a5a0266.jpg",
+    "static/media/style.css": "/publicPortfolio/static/media/tracy-adams-_mWreAf3b-A-unsplash.3dfc96bc.jpg",
+    "static/media/gallery_logo.e39553c7.png": "/publicPortfolio/static/media/gallery_logo.e39553c7.png",
+    "static/media/logo.103b5fa1.svg": "/publicPortfolio/static/media/logo.103b5fa1.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.291a5225.js",
+    "static/js/runtime-main.9e684381.js",
     "static/js/2.9b1ef8d1.chunk.js",
-    "static/css/main.54d83370.chunk.css",
-    "static/js/main.f13c5bd5.chunk.js"
+    "static/css/main.9f815803.chunk.css",
+    "static/js/main.09d4eaa7.chunk.js"
   ]
 }
