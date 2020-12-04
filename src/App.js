@@ -20,7 +20,7 @@ function App() {
                 <li><a href="#ContactID">Get in touch</a></li>
             </ul>    
       </div>
-      <Route path='/' exact component={Wrapper} />
+      <Route path='/publicPortfolio' exact component={Wrapper} />
       
     </div>
     </Router>
