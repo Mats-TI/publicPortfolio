@@ -18,7 +18,7 @@
     "react-scripts": "^4.0.0",
     "request": "^2.88.2"
   },
-  "homepage": "thapza101.github.io/publicPortfolio",
+  "homepage": "https://thapza101.github.io/publicPortfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
