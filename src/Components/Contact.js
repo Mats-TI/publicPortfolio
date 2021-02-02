@@ -113,7 +113,7 @@ class Contact extends React.Component{
                         Feel free to use the contact form for any questions, comments or just feedback in general. If necessary, I will get back to you as soon as possible.
                     </p>
                 </section>
-                <form onSubmit={this.dataHandler.bind(this)} id="contactForm">
+                <form action="http://stackoverflow.com/questions/2604530/answer/submit" onSubmit={this.dataHandler.bind(this)} id="contactForm">
                     <label>Name: </label><input type="text" name='yourName' value={this.state.yourName} onChange={this.onChangeName.bind(this)}></input>
                     <div className="error-msgs">{this.state.errorName}</div>
                     <label>Subject: </label><input type='text' name='yourSubject' value={this.state.yourSubject} onChange={this.onChangeSubject.bind(this)}></input>
