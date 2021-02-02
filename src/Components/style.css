@@ -1,15 +1,11 @@
 
-#root{
-    background-image: url(./Media/tracy-adams-_mWreAf3b-A-unsplash.jpg);
-    background-size:cover;
-}
 
 @font-face{
-    font-family: rowdies-bold;
+    font-family: serif;
     src: url(./Media/fonts/Rowdies/Rowdies-Bold.ttf)
 }
 @font-face{
-    font-family: rowdies-regular;
+    font-family: serif;
     src:url(./Media/fonts/Rowdies/Rowdies-Regular.ttf)
 }
 /*Desktop Styling*/
@@ -20,8 +16,9 @@ background-color:blue;
 height: 50px;
 margin:0 auto;
 width: 100%;
-font-family: rowdies-bold;
+font-family: serif;
 position:fixed;
+z-index: 1000;
 }
 .Wrapper .typedWords{
     padding-top: 50px;
@@ -30,10 +27,21 @@ position:fixed;
     width:80%;
     margin:0 auto;
     animation-duration: 10s;
-    font-family: rowdies-bold; 
+    font-family: serif; 
     color:black;
 }.info{
-    margin:5% auto;
+    margin:20px 2%;
+    text-align:left;
+    width:60%;
+    color:white;
+    font-size:30px;
+}
+.projectSubHeading{
+    animation:animation 5s;
+}
+.back-to-top{
+    width:50px;
+
 }
 li{
     color: white;
@@ -50,15 +58,21 @@ li{
     height: 100vh;
     background-size:cover;
     padding-top:50px;
+    background-image: url(./Media/landingBg.jpg);
+    background-repeat:no-repeat;
+
 }
 .Wrapper h1{
     margin-top: 15vh;
+    color:white;
+    font-family:serif;
+    font-size: 40px;
 }
 .Wrapper a{
-    color: black;
+    color:white;
     animation-name:animation;
     animation-duration: 5s;
-    font-family: rowdies-bold;
+    font-family: serif;
 }
 ul{
     padding-right: 40px;
@@ -67,56 +81,63 @@ ul{
 h1{
     animation-name:animation;
     animation-duration: 5s;
-    font-family: rowdies-bold;
+    font-family: serif;
 }
 .h1{
     font-size: 40px;
-    color: blanchedalmon;
-    background-color:whitesmoke;
     animation-name: animation;
     animation-duration: 5s;
 }
 p{
     font-size: 25px;
-    font-family: rowdies-regular;
+    font-family: serif;
     
 }
 .projectSection{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: none;
-    height: 100vh;
+    width:100%;
+    margin:50px auto;
 }
-
 .projectSection img{
-    width:40%;
+    border: groove 10px skyblue;
+    width:30%;
+}
+.projectDetails{
+    animation: animation 5s;
+    margin-top: 20px;
+    font-size: 2vh;
+}
+.projectDetails a{
+    color: black;
+    font-family: serif;
+    font-size:20px;    
 }
 .projectsDiv{
-    height: 100vh;
+    min-height: calc(100vh - 50px);
     padding-top: 50px;
-    font-family: rowdies-bold;
-    display: block;
-    background-color:black;
-    border-radius: 0 50px 0 50px;
+    font-family: serif;
+    display: flex;
+    flex-direction:column;
+    overflow:hidden;
+    /*background-color:#21ACCB;*/
+    /*background-color: #207FC1;*/
 }
-.projectSection div a img{
-    margin-top: 50%;
+.slider-left div, .slider-right div{
+    background-color:#207FC1;
 }
-
-.site1:hover, .site2:hover, .site3:hover{
-    width: 50%;
-    border: 3px solid white;
-    border-radius: 5px 10px 5px 10px;
+.react-3d-carousel{
+    margin-top: 20px;
 }
-.site3{
-    background-color: wheat;
-}
-
 .contactDiv{
     
     padding-top: 50px;
-    font-family: rowdies-regular;
-    background-color: black;
+    font-family: serif;
+    background-color:#207FC1;
+}
+.contactDiv h1{
+    color:white;
 }
 .contactDiv p{
     width: 70%;
@@ -145,7 +166,7 @@ input{
 }
 .confirmationAppear{
     display: block;
-    color:wheat;
+    color:white;
     animation: "anime" 4s
 }
 label{
@@ -168,9 +189,6 @@ textarea{
     width:80%;
     margin:0 auto;
     line-height: 50px;
-
-    
-
 }
 a{
     color:white;
@@ -201,10 +219,10 @@ button{
 }
 .submission{
      visibility: hidden;
-     color: wheat;
+     color: white;
 }
 .error-msgs{
-    color: wheat;
+    color: white;
 
 }
 @keyframes anime{
@@ -218,10 +236,7 @@ button{
 }
 /*Ipad Styling*/
 @media only screen and (max-width:1023px) and (min-width:768px){
-    #root{
-        background-image: url(./Media/tracy-adams-_mWreAf3b-A-unsplash.jpg);
-        background-size:cover;
-    }
+
     .info{
     margin:5% auto;
     }
@@ -231,21 +246,34 @@ button{
         height: 120px;
         margin:0 auto;
         width: 100%;
-        font-family: rowdies-bold;
+        font-family: serif;
         position:fixed;
         z-index: 1000;
     }
 
-    .Wrapper .typedWords{
+    .Wrapper{
         padding-top: 50px;
         animation-name:animation;
         animation-direction: forwards;
         width:80%;
         margin:0 auto;
         animation-duration: 10s;
-        font-family: rowdies-bold; 
+        font-family: serif; 
         color: navy;
     }
+.info{
+    margin:50px 2%;
+    text-align:left;
+    width:60%;
+    color:white;
+    font-size:30px;
+}
+.projectSubHeading{
+    animation:animation 5s;
+}
+.back-to-top{
+    width:50px;
+}
 
     ul{
         padding: 0;
@@ -259,70 +287,83 @@ button{
         line-height: 35px;
     }
     .Wrapper{
-        width: 90%;
+        width: 100%;
         margin: auto auto;
         height: 100vh;
-        background-size:cover;
+        background-size:100% 100%;
         padding-top: 120px;
+        background-image: url(./Media/landingBg.jpg);
+        background-repeat:no-repeat;
     }
     .Wrapper h1{
         margin-top: 7vh;
+        color:white;
+        font-family:serif;
+        font-size: 25px;
     }
     .Wrapper a{
-        color: black;
+        color: white;
         animation-name:animation;
         animation-duration: 5s;
-        font-family: rowdies-bold;
+        font-family: serif;
     }
     h1{ 
         animation-name:animation;
         animation-duration: 5s;
-        font-family: rowdies-bold;
+        font-family: serif;
     }
     .h1{
-        font-size: 20px;
-        color: blanchedalmon;
-        background-color:whitesmoke;
+        font-size: 30px;
         animation-name: animation;
         animation-duration: 5s;
     }
     p{
         font-size: 18px;
-        font-family: rowdies-regular;
+        font-family: serif;
         
     }
     .projectSection{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         grid-template-areas: none;
-        height: 100vh;
+    
 
     }
-    
     .projectSection img{
+        border: groove 10px skyblue;
         width:40%;
     }
+    .projectDetails{
+        animation: animation 5s;
+        margin-top:35px;
+    }
+    .projectDetails a{
+        color: black;
+        font-family: serif;
+        font-size:20px    
+    }
     .projectsDiv{
-        height: 100vh;
+        height: calc(100vh - 130px);
         padding-top: 130px;
-        font-family: rowdies-bold;
+        font-family: serif;
         display: block;
-        background-color: black;
-        border-radius: 0 35px 0 35px;
+
     }
+    .slider-left div, .slider-right div{
+        background-color:#207FC1;
+    }
+    .react-3d-carousel{
+        margin-top: 20px;
     
-    .site1:hover, .site2:hover, .site3:hover{
-        width: 50%;
     }
-    .site3{
-        background-color: wheat;
-    }
-    
+       
     .contactDiv{
-        
         padding-top: 130px;
-        font-family: rowdies-regular;
-        background-color: black;
+        font-family: serif;
+        background-color: #207FC1;
+    }
+    .contactDiv h1{
+        color:white;
     }
     .contactDiv p{
         width: 70%;
@@ -352,7 +393,7 @@ button{
     }
     .confirmationAppear{
         display: block;
-        color:wheat;
+        color:white;
         animation: "anime" 4s
     }
     label{
@@ -377,9 +418,7 @@ button{
         width:80%;
         margin:0 auto;
         line-height: 35px;
-        color:navy;
-        
-    
+        color:white;
     }
     a{
         color:white;
@@ -410,10 +449,10 @@ button{
     }
     .submission{
          visibility: hidden;
-         color: wheat;
+         color: white;
     }
     .error-msgs{
-        color: wheat;
+        color: white;
         width: 80%;
         margin-left: auto;
         margin-right: auto;
@@ -432,17 +471,14 @@ button{
 
 /*Moblie Styling*/
 @media only screen and (max-width:767px){
-    #root{
-        background-image: url(./Media/tracy-adams-_mWreAf3b-A-unsplash.jpg);
-        background-size:cover;
-    }
+
     #mainNav{
         position: 0;
         background-color:blue;
         height: 120px;
         margin:0 auto;
         width: 100%;
-        font-family: rowdies-bold;
+        font-family: serif;
         position:fixed;
         z-index: 1000;
     }
@@ -456,8 +492,21 @@ button{
         width:80%;
         margin:0 auto;
         animation-duration: 10s;
-        font-family: rowdies-bold; 
+        font-family: serif; 
         color: navy;
+    }
+    .info{
+        margin:50px 5%;
+        text-align:left;
+        width:60%;
+        color:white;
+        font-size:18px;
+    }
+    .projectSubHeading{
+        animation:animation 5s;
+    }
+    .back-to-top{
+        width:50px;
     }
 
     ul{
@@ -472,71 +521,92 @@ button{
         line-height: 35px;
     }
     .Wrapper{
-        width: 90%;
+        width: 100%;
         margin: auto auto;
         height: 100vh;
-        background-size:cover;
+        background-size:100% 100%;
         padding-top: 120px;
-        overflow: hidden;
+        background-image: url(./Media/landingBg.jpg);
+        background-repeat:no-repeat;
     }
     .Wrapper h1{
         margin-top: 7vh;
+        color:white;
+        font-family:serif;
+        font-size: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
     }
     .Wrapper a{
-        color: black;
+        color: white;
         animation-name:animation;
         animation-duration: 5s;
-        font-family: rowdies-bold;
+        font-family: serif;
     }
     h1{ 
         animation-name:animation;
         animation-duration: 5s;
-        font-family: rowdies-bold;
+        font-family: serif;
     }
     .h1{
         font-size: 20px;
-        color: blanchedalmon;
-        background-color:whitesmoke;
         animation-name: animation;
         animation-duration: 5s;
     }
     p{
-        font-size: 18px;
-        font-family: rowdies-regular;
+        font-size: 15px;
+        font-family: serif;
         
     }
     .projectSection{
         
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
         grid-template-areas: none;
-        height: 100vh;
     }
     
     .projectSection img{
+        border: groove 10px skyblue;
         width:40%;
     }
+    .projectDetails{
+        animation: animation 5s;
+        margin-top:35px;
+    }
+    .projectDetails a{
+        color: black;
+        font-family: serif;
+        font-size:20px    
+    }
     .projectsDiv{
-        height: 100vh;
+        height: calc(100vh - 130px);
         padding-top: 130px;
-        font-family: rowdies-bold;
-        display: block;
-        background-color:black;
-        border-radius: 0 25px 0 25px;
+        font-family: serif;
+        display: flex;
+        flex-direction:column;
+        clear:both;
+        
+
     }
+    .slider-left div, .slider-right div{
+        background-color:#207FC1;
+    }
+    .react-3d-carousel{
+        margin-top: 20px;
     
-    .site1:hover, .site2:hover, .site3:hover{
-        width: 50%;
-    }
-    .site3{
-        background-color: wheat;
     }
     
     .contactDiv{
         
         padding-top: 130px;
-        font-family: rowdies-regular;
-        background-color: black;
+        font-family: serif;
+        background-color:#207FC1;
+        display: flex;
+        flex-direction:column;
+        clear:both;
+    }
+    .contactDiv h1{
+        color:white;
     }
     .contactDiv p{
         width: 70%;
@@ -566,7 +636,7 @@ button{
     }
     .confirmationAppear{
         display: block;
-        color:wheat;
+        color:white;
         animation: "anime" 4s
     }
     label{
@@ -579,7 +649,7 @@ button{
         color: blue;
         margin-top: 1%;
         border-radius: 10px;
-        font-size: 17px;
+        font-size: 15px;
         font-weight: bold;
     }
     .Wrapper .p1{
@@ -590,7 +660,7 @@ button{
         width:100%;
         margin:0 auto;
         line-height: 30px;
-        color:navy;
+        color:white;
         
     
     }
