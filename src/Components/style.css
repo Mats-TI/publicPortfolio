@@ -95,7 +95,7 @@ p{
 }
 .projectSection{
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 35% 80%;
     grid-template-areas: none;
     width:100%;
     margin:50px auto;
@@ -324,7 +324,7 @@ button{
     }
     .projectSection{
         display: grid;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 35% 65%;
         grid-template-areas: none;
     
 
@@ -530,7 +530,7 @@ button{
         background-repeat:no-repeat;
     }
     .Wrapper h1{
-        margin-top: 7vh;
+        margin-top: 3vh;
         color:white;
         font-family:serif;
         font-size: 20px;
@@ -553,16 +553,19 @@ button{
         animation-name: animation;
         animation-duration: 5s;
     }
-    p{
+    p,h2{
         font-size: 15px;
         font-family: serif;
         
     }
+
+    
     .projectSection{
         
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: none;
+        
     }
     
     .projectSection img{
@@ -571,20 +574,21 @@ button{
     }
     .projectDetails{
         animation: animation 5s;
-        margin-top:35px;
+        margin-top:10px;
+        margin-bottom: 20px;
     }
     .projectDetails a{
         color: black;
         font-family: serif;
-        font-size:20px    
+        font-size:20px;    
     }
     .projectsDiv{
-        height: calc(100vh - 130px);
+        height: 100vh;
         padding-top: 130px;
         font-family: serif;
         display: flex;
         flex-direction:column;
-        clear:both;
+        
         
 
     }
