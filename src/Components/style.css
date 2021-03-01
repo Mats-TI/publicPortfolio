@@ -99,6 +99,7 @@ p{
     grid-template-areas: none;
     width:100%;
     margin:50px auto;
+
 }
 .projectSection img{
     border: groove 10px skyblue;
@@ -343,7 +344,7 @@ button{
         font-size:20px    
     }
     .projectsDiv{
-        height: calc(100vh - 130px);
+        min-height: calc(100vh - 130px);
         padding-top: 130px;
         font-family: serif;
         display: block;
@@ -583,7 +584,7 @@ button{
         font-size:20px;    
     }
     .projectsDiv{
-        height: 100vh;
+        min-height: 100vh;
         padding-top: 130px;
         font-family: serif;
         display: flex;
