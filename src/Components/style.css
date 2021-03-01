@@ -116,7 +116,7 @@ p{
     font-size:20px;    
 }
 .projectsDiv{
-    min-height: calc(100vh - 50px);
+    min-height: calc(100vh);
     padding-top: 50px;
     font-family: serif;
     display: flex;
@@ -344,7 +344,7 @@ button{
         font-size:20px    
     }
     .projectsDiv{
-        min-height: calc(100vh - 130px);
+        min-height: calc(100vh);
         padding-top: 130px;
         font-family: serif;
         display: block;
@@ -589,9 +589,6 @@ button{
         font-family: serif;
         display: flex;
         flex-direction:column;
-        
-        
-
     }
     .slider-left div, .slider-right div{
         background-color:#207FC1;
