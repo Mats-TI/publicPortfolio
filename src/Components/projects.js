@@ -1,15 +1,19 @@
+/* eslint-disable no-sequences */
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable jsx-a11y/alt-text */
 import React, {Component} from 'react'
 import './style.css'
 import DCproject from "./Media/MainDC.jpg"
 import Gallery_img from "./Media/gallery_logo.png"
 import Chess_img from './Media/Chess pic.jpg'
+import catebzaLogo from "./Media/CatebzaLogo.png"
 import {Carousel} from "3d-react-carousal"
 
 const slides=[
-<a href="https://thapza101.github.io/gallery" ><img src={Gallery_img}/></a>,
-<a href="https://thapza101.github.io/chessSite" style={{height:"200px"}}><img src={Chess_img} style={{height:"80%"},{width:"50%"}} /></a>,
-<a href="https://thapza101.github.io/DCGame" style={{height:"200px"}}><img src={DCproject} style={{height:"80%"},{width:"50%"}}/></a>,
+<a href="https://thapza101.github.io/CatebzaTrading" style={{height:"200px"},{padding:"5%"}} target="_blank"><img src={catebzaLogo} style={{height:"80%"},{width:"50%"}}/></a>,
+<a href="https://thapza101.github.io/gallery" target="_blank" ><img src={Gallery_img}/></a>,
+<a href="https://thapza101.github.io/chessSite" style={{height:"200px"}} target="_blank"><img src={Chess_img} style={{height:"80%"},{width:"50%"}} /></a>,
+<a href="https://thapza101.github.io/DCGame" style={{height:"200px"}} target="_blank"><img src={DCproject} style={{height:"80%"},{width:"50%"}}/></a>,
 ];
 var details=[
     {Naam:"Queen's Gambit Chess Club",Type:"Website",linksTo:"https://thapza101.github.io/chessSite",nameOfLink:"Go to Queen's Gambit's site"},
