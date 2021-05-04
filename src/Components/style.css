@@ -95,11 +95,14 @@ p{
 }
 .projectSection{
     display: grid;
-    grid-template-rows: 35% 80%;
+    grid-template-rows: 20% 80%;
     grid-template-areas: none;
     width:100%;
     margin:50px auto;
 
+}
+.grid_projects{
+    display: none;
 }
 .projectSection img{
     border: groove 10px skyblue;
@@ -325,15 +328,28 @@ button{
         
     }
     .projectSection{
+        
         display: grid;
-        grid-template-rows: 35% 65%;
+        grid-template-rows: 10% 90%;
         grid-template-areas: none;
-    
+        
+    }
+    .grid_projects{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin: 0 auto;
 
     }
+    .grid_projects a{
+        border:10px groove skyblue;
+        margin: 12px auto;
+        width:40%;   
+    }
+
     .projectSection img{
-        border: groove 10px skyblue;
-        width:40%;
+        
+        width: 100%;
     }
     .projectDetails{
         animation: animation 5s;
@@ -356,7 +372,7 @@ button{
     }
     .react-3d-carousel{
         margin-top: 20px;
-    
+        display: none;
     }
        
     .contactDiv{
@@ -566,14 +582,26 @@ button{
     .projectSection{
         
         display: grid;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 10% 90%;
         grid-template-areas: none;
         
     }
-    
+    .grid_projects{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin: 0 auto;
+
+    }
+    .grid_projects a{
+        border:10px groove skyblue;
+        margin: 12px auto;
+        width:40%;   
+    }
+
     .projectSection img{
-        border: groove 10px skyblue;
-        width:40%;
+        
+        width: 100%;
     }
     .projectDetails{
         animation: animation 5s;
@@ -597,7 +625,7 @@ button{
     }
     .react-3d-carousel{
         margin-top: 20px;
-    
+        display: none;
     }
     
     .contactDiv{
