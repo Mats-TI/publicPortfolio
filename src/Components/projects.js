@@ -13,7 +13,6 @@ const slides=[
     //When adding a project, also add it to the grid_project div below
 <a href="https://thapza101.github.io/CatebzaTrading" style={{height:"200px"},{padding:"5%"}} target="_blank"><img src={catebzaLogo} style={{height:"80%"},{width:"50%"}}/></a>,
 <a href="https://thapza101.github.io/gallery" target="_blank" ><img src={Gallery_img}/></a>,
-<a href="https://thapza101.github.io/chessSite" style={{height:"200px"}} target="_blank"><img src={Chess_img} style={{height:"80%"},{width:"50%"}} /></a>,
 <a href="https://thapza101.github.io/DCGame" style={{height:"200px"}} target="_blank"><img src={DCproject} style={{height:"80%"},{width:"50%"}}/></a>,
 ];
 var details=[
@@ -56,7 +55,7 @@ class Projects extends Component{
                 <div className="grid_projects">
                     <a href="https://thapza101.github.io/CatebzaTrading" target="_blank"><img src={catebzaLogo}/></a>
                     <a href="https://thapza101.github.io/gallery" target="_blank" ><img src={Gallery_img}/></a>
-                    <a href="https://thapza101.github.io/chessSite" target="_blank"><img src={Chess_img} /></a>
+                    
                     <a href="https://thapza101.github.io/DCGame" target="_blank"><img src={DCproject}/></a>
                 </div>
             </section>

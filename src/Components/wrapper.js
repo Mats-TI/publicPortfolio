@@ -24,7 +24,7 @@ class Wrapper extends React.Component{
                 <h1>The name is Thapelo, pleased to make your acquintance.</h1>
                 <div className="info">
                 <p className="p1">I am a Front-end Developer with proficiency in HTML5, CSS3, Vanilla Javascript and React.js library.</p>
-                <p className="p1">My other konwledge areas include server-side scripting in Node.js runtime environment and MySQL Database Management System.</p>
+                <p className="p1">My other knowledge areas include server-side scripting in Node.js runtime environment and MySQL Database Management System.</p>
                  <p className="p1">Feel free to have a look at my constantly improving work under the <a href="#ProID" >Projects</a> section.</p>
             </div>
             <BackToTop showAt={300}>

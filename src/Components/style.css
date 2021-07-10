@@ -13,7 +13,7 @@
 
 #mainNav{
 background-color:blue;
-height: 50px;
+height: 70px;
 margin:0 auto;
 width: 100%;
 font-family: serif;
@@ -26,7 +26,7 @@ z-index: 1000;
     animation-direction: forwards;
     width:80%;
     margin:0 auto;
-    animation-duration: 10s;
+    animation-duration: 5s;
     font-family: serif; 
     color:black;
 }.info{
@@ -46,11 +46,18 @@ z-index: 1000;
 li{
     color: white;
     display: inline-block;
-    
-    margin-left:100px;
-    font-size: 20px;
-    line-height: 50px;
-    
+    line-height: 70px;
+    float:left;
+    font-size: 25px;  
+}
+li img{
+    height: 25px;
+    background-color: white;
+    border: 1px;
+    border-radius: 25%;
+}
+.contactLink, .projectLink{
+    margin-left:20%;
 }
 .Wrapper{
     width: 100%;
@@ -75,7 +82,7 @@ li{
     font-family: serif;
 }
 ul{
-    padding-right: 40px;
+    
     margin: 0 0 0 0;
 }
 h1{
@@ -189,7 +196,7 @@ textarea{
     font-style: italic;
     animation-name: animation;
     animation-direction: normal;
-    animation-duration: 10s;
+    animation-duration: 5s;
     width:80%;
     margin:0 auto;
     line-height: 50px;
@@ -261,7 +268,7 @@ button{
         animation-direction: forwards;
         width:80%;
         margin:0 auto;
-        animation-duration: 10s;
+        animation-duration: 5s;
         font-family: serif; 
         color: navy;
         min-height: 100vh;
@@ -293,6 +300,12 @@ button{
         display:block;
         font-size: 17px;
         line-height: 35px;
+    }
+    li img{
+        height: 20px;
+        background-color: white;
+        border: 1px;
+        border-radius: 25%;
     }
     .Wrapper{
         width: 100%;
@@ -436,7 +449,7 @@ button{
         font-style: italic;
         animation-name: animation;
         animation-direction: normal;
-        animation-duration: 10s;
+        animation-duration: 5s;
         width:80%;
         margin:0 auto;
         line-height: 35px;
@@ -513,7 +526,7 @@ button{
         animation-direction: forwards;
         width:80%;
         margin:0 auto;
-        animation-duration: 10s;
+        animation-duration: 5s;
         font-family: serif; 
         color: navy;
     }
@@ -543,6 +556,12 @@ button{
         display:block;
         font-size: 17px;
         line-height: 35px;
+    }
+    li img{
+        height: 17px;
+        background-color: white;
+        border: 1px;
+        border-radius: 25%;
     }
     .Wrapper{
         width: 100%;
@@ -694,7 +713,7 @@ button{
         font-style: italic;
         animation-name: animation;
         animation-direction: normal;
-        animation-duration: 10s;
+        animation-duration: 5s;
         width:100%;
         margin:0 auto;
         line-height: 30px;
