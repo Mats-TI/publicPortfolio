@@ -246,33 +246,22 @@ button{
 }
 }
 /*Ipad Styling*/
-@media only screen and (max-width:1023px) and (min-width:768px){
+@media only screen and (max-width:1023px) and (min-width:720px){
 
     .info{
     margin:5% auto;
     }
     #mainNav{
         position: 0;
-        background-color:blue;
-        height: 120px;
+        background-color:#0000ff;
+        height: 35px;
         margin:0 auto;
         width: 100%;
         font-family: serif;
-        position:fixed;
+        
         z-index: 1000;
     }
 
-    .Wrapper{
-        padding-top: 50px;
-        animation-name:animation;
-        animation-direction: forwards;
-        width:80%;
-        margin:0 auto;
-        animation-duration: 5s;
-        font-family: serif; 
-        color: navy;
-        min-height: 100vh;
-    }
 .info{
     margin:50px 2%;
     text-align:left;
@@ -294,12 +283,15 @@ button{
         padding: 0;
         text-align: left;
         padding-left: 10%;
+        margin:0;
+        
     }
     li{
         color: white;
-        display:block;
+        display:inline-block;
         font-size: 17px;
         line-height: 35px;
+        margin-right:10%;
     }
     li img{
         height: 20px;
@@ -312,7 +304,7 @@ button{
         margin: auto auto;
         min-height: 100vh;
         background-size:100% 100%;
-        padding-top: 120px;
+        padding-top: 50px;
         background-image: url(./Media/landingBg.jpg);
         background-repeat:no-repeat;
     }
@@ -360,7 +352,7 @@ button{
     .grid_projects a{
         border:10px groove skyblue;
         margin: 12px auto;
-        width:40%;   
+        width:20%;   
     }
 
     .projectSection img{
@@ -378,7 +370,7 @@ button{
     }
     .projectsDiv{
         min-height: calc(100vh);
-        padding-top: 130px;
+        padding-top: 50px;
         font-family: serif;
         display: block;
 
@@ -392,7 +384,7 @@ button{
     }
        
     .contactDiv{
-        padding-top: 130px;
+        padding-top: 50px;
         font-family: serif;
         background-color: #207FC1;
         min-height: 100vh;
@@ -505,7 +497,7 @@ button{
 }
 
 /*Moblie Styling*/
-@media only screen and (max-width:767px){
+@media only screen and (max-width:720px){
 
     #mainNav{
         position: 0;
@@ -620,7 +612,7 @@ button{
     .grid_projects a{
         border:10px groove skyblue;
         margin: 12px auto;
-        width:40%;   
+        width:25%;   
     }
 
     .projectSection img{
