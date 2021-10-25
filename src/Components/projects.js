@@ -5,7 +5,6 @@ import React, {Component} from 'react'
 import './style.css'
 import DCproject from "./Media/MainDC.jpg"
 import Gallery_img from "./Media/gallery_logo.png"
-import Chess_img from './Media/Chess pic.jpg'
 import catebzaLogo from "./Media/CatebzaLogo.png"
 import {Carousel} from "3d-react-carousal"
 
