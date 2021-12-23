@@ -5,7 +5,7 @@
   "proxy": "http://localhost:3001",
   "secure": "false",
   "ignorePath": "true",
-  "homepage": "https://thapza101.github.io/publicPortfolio/",
+  "homepage": "https://mats-ti.github.io/publicPortfolio/",
   "dependencies": {
     "3d-react-carousal": "^3.1.0",
     "@testing-library/jest-dom": "^4.2.4",

@@ -2,6 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React, {Component} from 'react'
 import './style.css'
+import './mobile-style.css'
 import Projects from './projects'
 import DCproject from './Media/MainDC.jpg'
 import {BrowserRouter as Router, Link, Route, Redirect} from 'react-router-dom'

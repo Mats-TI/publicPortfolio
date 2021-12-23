@@ -3,6 +3,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, {Component} from 'react'
 import './style.css'
+import "./mobile-style.css"
 import DCproject from "./Media/MainDC.jpg"
 import Gallery_img from "./Media/gallery_logo.png"
 import catebzaLogo from "./Media/CatebzaLogo.png"
@@ -10,13 +11,13 @@ import {Carousel} from "3d-react-carousal"
 
 const slides=[
     //When adding a project, also add it to the grid_project div below
-<a href="https://thapza101.github.io/CatebzaTrading" style={{height:"200px"},{padding:"5%"}} target="_blank"><img src={catebzaLogo} style={{height:"80%"},{width:"50%"}}/></a>,
-<a href="https://thapza101.github.io/gallery" target="_blank" ><img src={Gallery_img}/></a>,
-<a href="https://thapza101.github.io/DCGame" style={{height:"200px"}} target="_blank"><img src={DCproject} style={{height:"80%"},{width:"50%"}}/></a>,
+<a href="https://mats-ti.github.io/CatebzaTrading" style={{height:"200px"},{padding:"5%"}} target="_blank"><img src={catebzaLogo} style={{height:"80%"},{width:"50%"}}/></a>,
+<a href="https://mats-ti.github.io/gallery" target="_blank" ><img src={Gallery_img}/></a>,
+<a href="https://mats-ti.github.io/DCGame" style={{height:"200px"}} target="_blank"><img src={DCproject} style={{height:"80%"},{width:"50%"}}/></a>,
 ];
 var details=[
-    {Naam:"Queen's Gambit Chess Club",Type:"Website",linksTo:"https://thapza101.github.io/chessSite",nameOfLink:"Go to Queen's Gambit's site"},
-    {Naam:"Gallery", Type:"Web-application", linksTo:"https://thapza101.github.io/gallery",nameOfLink:"Go to the Gallery site"}
+    {Naam:"Queen's Gambit Chess Club",Type:"Website",linksTo:"https://mats-ti.github.io/chessSite",nameOfLink:"Go to Queen's Gambit's site"},
+    {Naam:"Gallery", Type:"Web-application", linksTo:"https://mats-ti.github.io/gallery",nameOfLink:"Go to the Gallery site"}
 
 ]
 
@@ -26,7 +27,7 @@ class Projects extends Component{
         this.state={
             name:"DC Quiz Game",
             type:"Web-application",
-            link:"https://thapza101.github.io/DCGame",
+            link:"https://mats-ti.github.io/DCGame",
             linkName:"Go to DC Quiz Game's Page"
         }
     }
@@ -52,10 +53,10 @@ class Projects extends Component{
                 
         </Carousel>
                 <div className="grid_projects">
-                    <a href="https://thapza101.github.io/CatebzaTrading" target="_blank"><img src={catebzaLogo}/></a>
-                    <a href="https://thapza101.github.io/gallery" target="_blank" ><img src={Gallery_img}/></a>
+                    <a href="https://mats-ti.github.io/CatebzaTrading" target="_blank"><img src={catebzaLogo}/></a>
+                    <a href="https://mats-ti.github.io/gallery" target="_blank" ><img src={Gallery_img}/></a>
                     
-                    <a href="https://thapza101.github.io/DCGame" target="_blank"><img src={DCproject}/></a>
+                    <a href="https://mats-ti.github.io/DCGame" target="_blank"><img src={DCproject}/></a>
                 </div>
             </section>
             </div>

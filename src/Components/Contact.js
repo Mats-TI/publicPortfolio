@@ -4,7 +4,9 @@
 import React, { createRef } from 'react'
 import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom'
 import './style.css'
+import "./mobile-style.css"
 import axios from 'axios'
+
 
 class Contact extends React.Component{
     constructor(){

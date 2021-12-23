@@ -65,6 +65,7 @@ border-bottom: blue 1px solid;
 }
 .projectSubHeading{
     animation:animation 5s;
+    font-family: RowdiesRegular;
 }
 .back-to-top{
     width:50px;
@@ -108,6 +109,7 @@ li a:hover{
     font-size: 30px;
     text-align: left;
     margin-left: 100px;
+    width: 60%;
     
 }
 .Wrapper a{
@@ -122,8 +124,9 @@ h1{
     font-family: RowdiesRegular;
 }
 .h1{
-    font-size: 40px;
+    font-size: 30px;
     animation-name: animation;
+    padding-top:20px;
     animation-duration: 5s;
 }
 p{
@@ -185,6 +188,7 @@ p{
     width: 70%;
     color: white;
     margin: 0 auto;
+    font-family: RowdiesRegular;
 }
 form{
     margin-top: 4%;
@@ -286,6 +290,7 @@ button{
         z-index: 1000;
         height: 100vh;
         width: 100%;
+        margin-top:65px;
         background:rgba(0,0,0,0.75);
         visibility: hidden;
     }
@@ -360,6 +365,8 @@ button{
         animation:animation 5s;
         width:90%;
         margin: 0 auto;
+        font-family: RowdiesRegular;
+        font-size: 18px;
     
     }
     .back-to-top{
@@ -380,6 +387,8 @@ button{
         font-size: 20px;
         text-align: left;
         margin-left: 50px;
+        width:60%;
+
     }
     .Wrapper a{
         color: black;
@@ -390,7 +399,7 @@ button{
     h1{ 
         animation-name:animation;
         animation-duration: 5s;
-        font-family: serif;
+        font-family: RowdiesRegular;
     }
     .h1{
         font-size: 30px;
@@ -398,8 +407,8 @@ button{
         animation-duration: 5s;
     }
     p{
-        font-size: 18px;
-        font-family: serif;
+        font-size: 16px;
+        font-family: RowdiesRegualr;
         
     }
     .projectSection{
@@ -463,6 +472,7 @@ button{
         width: 70%;
         color: white;
         margin: 0 auto;
+        font-family: RowdiesRegular;
     }
     form{
         margin-top: 4%;
@@ -473,7 +483,7 @@ button{
         height: 25px;
         display: block;
         margin:0 auto;
-        color:blue;
+        color:black;
         font-size:25px;
         margin-top: 1%;
         font-style: italic;
@@ -483,7 +493,7 @@ button{
     input{
         font-size: 15px;
         font-style:normal;
-        color: blue;
+        color: black;
     }
     .confirmationAppear{
         display: block;
@@ -497,7 +507,7 @@ button{
     textarea{
         width: 50%;
         height: 100px;
-        color: blue;
+        color: black;
         margin-top: 1%;
         border-radius: 10px;
         font-size: 17px;
@@ -557,272 +567,3 @@ button{
     }
 
 }
-
-/*Moblie Styling*/
-@media only screen and (max-width:700px){
-
-    #mainNav{
-        position: 0;
-        background-color:blue;
-        height: 120px;
-        margin:0 auto;
-        width: 100%;
-        font-family: serif;
-        position:fixed;
-        z-index: 1000;
-    }
-    .info{
-        margin:5% auto
-    }
-    .Wrapper .typedWords{
-        padding-top: 50px;
-        animation-name:animation;
-        animation-direction: forwards;
-        width:80%;
-        margin:0 auto;
-        animation-duration: 5s;
-        font-family: serif; 
-        color: navy;
-    }
-    .info{
-        margin:50px 5%;
-        text-align:left;
-        width:60%;
-        color:white;
-        font-size:18px;
-    }
-    .projectSubHeading{
-        animation:animation 5s;
-        width:90%;
-        margin: 0 auto;
-    }
-    .back-to-top{
-        width:50px;
-    }
-
-    ul{
-        padding: 0;
-        text-align: left;
-        padding-left: 10%;
-    }
-    li{
-        color: white;
-        display:block;
-        font-size: 17px;
-        line-height: 35px;
-    }
-    li img{
-        height: 17px;
-        background-color: white;
-        border: 1px;
-        border-radius: 25%;
-    }
-    .Wrapper{
-        width: 100%;
-        margin: auto auto;
-        min-height: 100vh;
-        background-size:100% 100%;
-        padding-top: 120px;
-        background-image: url(./Media/landingPageBG.jpg);
-        background-size: cover;
-        background-repeat:no-repeat;
-    }
-    .Wrapper h1{
-        margin-top: 3vh;
-        color:white;
-        font-family:serif;
-        font-size: 20px;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    .Wrapper a{
-        color: white;
-        animation-name:animation;
-        animation-duration: 5s;
-        font-family: serif;
-    }
-    h1{ 
-        animation-name:animation;
-        animation-duration: 5s;
-        font-family: serif;
-    }
-    .h1{
-        font-size: 20px;
-        animation-name: animation;
-        animation-duration: 5s;
-    }
-    p,h2{
-        font-size: 15px;
-        font-family: serif;
-        
-    }
-
-    
-    .projectSection{
-        
-        display: grid;
-        grid-template-rows: 10% 90%;
-        grid-template-areas: none;
-        
-    }
-    .grid_projects{
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        margin: 2% auto;
-
-    }
-    .grid_projects a{
-        border:10px groove skyblue;
-        margin: 12px auto;
-        width:25%;   
-    }
-
-    .projectSection img{
-        
-        width: 100%;
-    }
-    .projectDetails{
-        animation: animation 5s;
-        margin-top:10px;
-        margin-bottom: 20px;
-    }
-    .projectDetails a{
-        color: black;
-        font-family: serif;
-        font-size:20px;    
-    }
-    .projectsDiv{
-        min-height: 100vh;
-        padding-top: 130px;
-        font-family: serif;
-        display: flex;
-        flex-direction:column;
-    }
-    .slider-left div, .slider-right div{
-        background-color:#207FC1;
-    }
-    .react-3d-carousel{
-        margin-top: 20px;
-        display: none;
-    }
-    
-    .contactDiv{
-        
-        padding-top: 130px;
-        font-family: serif;
-        background-color:#207FC1;
-        display: flex;
-        flex-direction:column;
-        clear:both;
-        min-height: 100vh;
-    }
-    .contactDiv h1{
-        color:white;
-    }
-    .contactDiv p{
-        width: 70%;
-        color: white;
-        margin: 0 auto;
-    }
-    form{
-        margin-top: 4%;
-    }
-    
-    input,label{
-        height: 25px;
-        display: block;
-        margin:0 auto;
-        color:blue;
-        font-size:15px;
-        margin-top: 1%;
-        font-style: italic;
-        border-radius: 10px;
-        
-    }
-    input{
-        width:50%;
-        font-size: 15px;
-        font-style:normal;
-        color: blue;
-    }
-    .confirmationAppear{
-        display: block;
-        color:white;
-        animation: "anime" 4s
-    }
-    label{
-        color:white;
-        margin-top: 5%;
-    }
-    textarea{
-        width: 50%;
-        height: 100px;
-        color: blue;
-        margin-top: 1%;
-        border-radius: 10px;
-        font-size: 15px;
-        font-weight: bold;
-    }
-    .Wrapper .p1{
-        font-style: italic;
-        animation-name: animation;
-        animation-direction: normal;
-        animation-duration: 5s;
-        width:100%;
-        margin:0 auto;
-        line-height: 30px;
-        color:white;
-        
-    
-    }
-    a{
-        color:black;
-    }
-    a:hover{
-        color:gray;
-    }
-    button{
-        margin-top:2%;
-        border: solid;
-        border-color:white;
-        border-radius: 10px;
-        background-color: black;
-        color: white;
-        font-size: medium;
-        cursor: pointer;
-        font-size: larger;
-    }
-     @keyframes animation{
-         0%{
-             opacity: 0;
-             color: blue;
-         }
-    
-         100%{
-             opacity:1 ;
-         }
-    }
-    .submission{
-         visibility: hidden;
-         color: wheat;
-    }
-    .error-msgs{
-        color: wheat;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    
-    }
-    @keyframes anime{
-        0%{
-            opacity: 0;
-        }
-        100%{
-            opacity: 1;
-        }
-    }
-
-    
-}
-
