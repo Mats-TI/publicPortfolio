@@ -52,7 +52,7 @@ class Nav extends React.Component{
                     <ul className='sideNavList'>
                     <li className="homeLink"><a href="#Home" onClick={this.openMobileMenu}><i className="fa fa-home"/> Home</a></li>
                     {/*<li className="aboutLink"><a href="#"><i className="fa fa-address-card"/> About</a></li>*/}
-                    <li className="skillsLink"><a href="#" onClick={this.openMobileMenu}><i className="fa fa-code"/> My Skills </a></li>
+                    {/*<li className="skillsLink"><a href="#" onClick={this.openMobileMenu}><i className="fa fa-code"/> My Skills </a></li>*/}
                     <li className="projectLink"><a href="#ProID" onClick={this.openMobileMenu}><i className="fa fa-briefcase"/> My Projects</a></li>
                     <li className="contactLink"><a href="#ContactID" onClick={this.openMobileMenu}><i className="fa fa-phone" /> Get in touch</a></li>
                     </ul>
@@ -61,7 +61,7 @@ class Nav extends React.Component{
                 <ul className="mainNavList">
                       <li className="homeLink"><a href="#Home"><i className="fa fa-home"/> Home</a></li>
                       {/*<li className="aboutLink"><a href="#"><i className="fa fa-address-card"/> About</a></li>*/}
-                      <li className="skillsLink"><a href="#"><i className="fa fa-code"/> My Skills </a></li>
+                      {/*<li className="skillsLink"><a href="#"><i className="fa fa-code"/> My Skills </a></li>*/}
                       <li className="projectLink"><a href="#ProID"><i className="fa fa-briefcase"/> My Projects</a></li>
                       <li className="contactLink"><a href="#ContactID"><i className="fa fa-phone" /> Get in touch</a></li>
                 </ul>    
