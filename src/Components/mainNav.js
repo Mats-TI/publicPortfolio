@@ -24,15 +24,14 @@ class Nav extends React.Component{
     }
     openMobileMenu=()=>{
         if(this.state.toggleMenu===true){
-            this.sideNavRef.current.style.visibility="visible";
-            /*this.openMenuRef.current.style.src={closeMenu}*/
+
+            this.sideNavRef.current.style.clipPath="circle(1000px at 90% 10%)";
             this.setState({
                 toggleMenu:false
             })
         }
         else{
-            this.sideNavRef.current.style.visibility="hidden";
-            /*this.openMenuRef.current.style.src={openMenu}*/
+            this.sideNavRef.current.style.clipPath="circle(0px at 100% 0%)";
             this.setState({
                 toggleMenu:true
             })
