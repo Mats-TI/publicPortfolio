@@ -121,6 +121,15 @@ li a:hover{
     animation-duration: 5s;
     font-family: serif;
 }
+.Wrapper .p1{
+    overflow:hidden;
+    white-space: nowrap;
+    width:0;
+    animation: typing 5s steps(45,end) forwards;
+    width:80%;
+    margin:0 auto;
+    line-height: 50px;
+}
 h1{
     animation-name:animation;
     animation-duration: 5s;
@@ -137,6 +146,76 @@ p{
     font-family: RowdiesRegular;
     
 }
+.skillsDiv{
+    min-height: 100vh;
+    background-image: url("./Media/skillsBg.jpg");
+    background-size: cover;
+    display: flex;
+    padding-top: 70px;
+    
+}
+.mainCircle{
+    border-radius: 50%;
+    background:white;
+    height:40vh;
+    width: 40vh;
+    margin-left: 40vh;
+    margin-top: 23vh;
+    display: grid;
+    align-items:center;
+    justify-items: center;
+
+}
+.languages{
+
+    background-color:transparent;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    grid-area: 1/1/1/1;
+}
+.miniCircle{
+    background-color:white;
+    border-radius:50%;
+    height: 6vh;
+    width: 6vh;
+    grid-area: 2/1/1/1;
+}
+
+.mini1{
+    transform: translate(0,-35vh);
+    background-image: url("./Media/Icons/python_icon.png");
+    background-size: cover;
+}
+.mini2{
+    transform: translate(-24.74vh,-24.75vh);
+    background-image: url("./Media/Icons/javascript_icon.png");
+    background-size: cover;
+}
+.mini3{
+    transform: translate(-35vh,0vh);
+    background-size: cover;
+    background-image: url("./Media/Icons/sql_icon.png");
+}
+.mini4{
+    transform: translate(-24.75vh,24.75vh);
+    background-image: url("./Media/Icons/html_icon.png");
+    background-size: cover;
+}
+.mini5{
+    transform: translate(0,35vh);
+    background-size: cover;
+    background-image: url("./Media/Icons/css3_icon.png");
+}
+.lang1{
+    font-size: 15px;
+    margin: 15px 0;
+    color: black;
+}
+.lang1:hover{
+    cursor: pointer;
+}
+
 .projectSection{
     display: grid;
     grid-template-rows: 20% 80%;
@@ -163,14 +242,12 @@ p{
     font-size:20px;    
 }
 .projectsDiv{
-    min-height: calc(100vh);
-    padding-top: 50px;
+    min-height: calc(100vh - 70px);
+    padding-top: 70px;
     font-family: serif;
     display: flex;
     flex-direction:column;
     overflow:hidden;
-    /*background-color:#21ACCB;*/
-    /*background-color: #207FC1;*/
 }
 .slider-left div, .slider-right div{
     background-color:#207FC1;
@@ -231,15 +308,7 @@ textarea{
     font-size: 15px;
     font-weight: bold;
 }
-.Wrapper .p1{
-    overflow:hidden;
-    white-space: nowrap;
-    width:0;
-    animation: typing 5s steps(45,end) forwards;
-    width:80%;
-    margin:0 auto;
-    line-height: 50px;
-}
+
 a{
     color:black;
     text-decoration: none;

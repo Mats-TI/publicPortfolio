@@ -1,13 +1,12 @@
 /* eslint-disable no-useless-constructor */
 /* eslint-disable no-unused-vars */
-import React, {Component} from 'react'
+import React from 'react'
 import './style.css'
 import './mobile-style.css'
 import Projects from './projects'
-import DCproject from './Media/MainDC.jpg'
-import {BrowserRouter as Router, Link, Route, Redirect} from 'react-router-dom'
-import ReactDOM from 'react-dom'
+import {BrowserRouter as Router} from 'react-router-dom'
 import Contact from './Contact'
+import Skills from './skills'
 import BackToTop from 'react-back-to-top-button'
 import topIcon from "./Media/iconfinder_arrow-up_511953.png"
 import AI from "./Media/brain_electronics_icon.png"
@@ -36,6 +35,7 @@ class Wrapper extends React.Component{
                 <img src={topIcon} alt="Back To Top" />
             </BackToTop>
             </div>
+            <Skills />
             <Projects />
             <Contact />
         

@@ -26,12 +26,14 @@ class Nav extends React.Component{
         if(this.state.toggleMenu===true){
 
             this.sideNavRef.current.style.clipPath="circle(1000px at 90% 10%)";
+            this.openMenuRef.current.style.opacity="0.75"
             this.setState({
                 toggleMenu:false
             })
         }
         else{
             this.sideNavRef.current.style.clipPath="circle(0px at 100% 0%)";
+            this.openMenuRef.current.style.opacity="1"
             this.setState({
                 toggleMenu:true
             })
@@ -51,7 +53,7 @@ class Nav extends React.Component{
                     <ul className='sideNavList'>
                     <li className="homeLink"><a href="#Home" onClick={this.openMobileMenu}><i className="fa fa-home"/> Home</a></li>
                     {/*<li className="aboutLink"><a href="#"><i className="fa fa-address-card"/> About</a></li>*/}
-                    {/*<li className="skillsLink"><a href="#" onClick={this.openMobileMenu}><i className="fa fa-code"/> My Skills </a></li>*/}
+                    <li className="skillsLink"><a href="#skills" onClick={this.openMobileMenu}><i className="fa fa-code"/> My Skills </a></li>
                     <li className="projectLink"><a href="#ProID" onClick={this.openMobileMenu}><i className="fa fa-briefcase"/> My Projects</a></li>
                     <li className="contactLink"><a href="#ContactID" onClick={this.openMobileMenu}><i className="fa fa-phone" /> Get in touch</a></li>
                     </ul>
@@ -60,7 +62,7 @@ class Nav extends React.Component{
                 <ul className="mainNavList">
                       <li className="homeLink"><a href="#Home"><i className="fa fa-home"/> Home</a></li>
                       {/*<li className="aboutLink"><a href="#"><i className="fa fa-address-card"/> About</a></li>*/}
-                      {/*<li className="skillsLink"><a href="#"><i className="fa fa-code"/> My Skills </a></li>*/}
+                      <li className="skillsLink"><a href="#skills"><i className="fa fa-code"/> My Skills </a></li>
                       <li className="projectLink"><a href="#ProID"><i className="fa fa-briefcase"/> My Projects</a></li>
                       <li className="contactLink"><a href="#ContactID"><i className="fa fa-phone" /> Get in touch</a></li>
                 </ul>    

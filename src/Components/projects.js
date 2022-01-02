@@ -31,17 +31,6 @@ class Projects extends Component{
             linkName:"Go to DC Quiz Game's Page"
         }
     }
-    changeDetails=()=>{
-        var i=0;
-        this.setState({
-            name:details[i].Naam,
-            type:details[i].Type,
-            link:details[i].linksTo,
-            linkName:details[i].nameOfLink
-        },()=>{
-            i=i+1;
-        })
-    }
 
     render(){
         return(
