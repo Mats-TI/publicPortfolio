@@ -1,4 +1,20 @@
 import React, {Component} from 'react'
+import JSIcon from "./Media/Icons/javascript_icon.png"
+import PyIcon from "./Media/Icons/python_icon.png"
+import sqlIcon from "./Media/Icons/sql_icon.png"
+import htmlIcon from "./Media/Icons/html_icon.png"
+import css3_icon from "./Media/Icons/css3_icon.png"
+import reactIcon from "./Media/Icons/react_icon.png"
+import npmIcon from "./Media/Icons/npm_icon.png"
+import apiIcon from "./Media/Icons/api_icon.png"
+import nodeIcon from "./Media/Icons/node js_icon.png"
+import PandasIcon from "./Media/Icons/pandas_icon_56x56.png"
+import numpyIcon from "./Media/Icons/numpy_logo_56x56.png"
+import sklearnIcon from "./Media/Icons/scikit_logo_56x56.png"
+import regIcon from "./Media/Icons/regression_icon_56x56.png"
+import classIcon from "./Media/Icons/Classification_icon_56x56.png"
+import clusterIcon from "./Media/Icons/DataClustering_icon_1_56x56.png"
+import visualIcon from "./Media/Icons/DataVisual_56x56.jpg"
 
 class Skills extends Component{
     constructor(){
@@ -7,6 +23,7 @@ class Skills extends Component{
             mySkills:[
                 "React.js",
                 "Node Package Manager",
+                "API",
                 "Express.js",
                 "Pandas",
                 "Numpy",
@@ -30,19 +47,83 @@ class Skills extends Component{
     render(){
         return(
             <div className="skillsDiv" id="skills">
-                <figure className='mainCircle'>
-                <section className='languages'>
-                    <p className='lang1'>Python</p>
-                    <p className='lang1'>JavaScript</p>
-                    <p className='lang1'>SQL</p>
-                    <p className='lang1'>HTML5</p>
-                    <p className='lang1'>CSS3</p>
+                <h1>My Skills</h1>
+                <h2>Web development Skills and toolbox</h2>
+                <figure className='mainCircleWeb'>
+                <section className='mainCircleText'>
+                    <button className='skills-nav'>Show ML skills</button>
                 </section>
-                <span className='miniCircle mini1'></span>
-                <span className='miniCircle mini2'></span>
-                <span className='miniCircle mini3'></span>
-                <span className='miniCircle mini4'></span>
-                <span className='miniCircle mini5'></span>
+                <span className='miniCircle mini1'>
+                    <img src={reactIcon} alt='reactIcon'/>
+                    <p className='lang'>React.js</p>
+                </span>
+                <span className='miniCircle mini2'>
+                    <img src={JSIcon}  alt="JS_icon"/>
+                    <p className='lang'>JavaScript</p>
+                </span>
+                <span className='miniCircle mini3'>
+                    <img src={sqlIcon} alt="sql_icon"/>
+                    <p className='lang'>SQL</p>
+                </span>
+                <span className='miniCircle mini4'>
+                    <img src={htmlIcon} alt="html_icon"/>
+                    <p className='lang'>HTML5</p>
+                </span>
+                <span className='miniCircle mini5'>
+                <img src={css3_icon} alt="css_icon" />
+                    <p className='lang'>CSS3</p>
+                </span>
+                <span className='miniCircle mini6'>
+                <img src={npmIcon} alt="npm_icon" />
+                    <p className='lang'>NPM</p>
+                </span>
+                <span className='miniCircle mini7'>
+                <img src={apiIcon} alt="api_icon" />
+                    <p className='lang'>APIs</p>
+                </span>
+                <span className='miniCircle mini8'>
+                <img src={nodeIcon} alt="node_icon" />
+                    <p className='lang'>Node.js </p>
+                </span>
+                </figure>
+
+                <figure className='mainCircleML'>
+                <section className='mainCircleText'>
+                    <button className='skills-nav'>Show Web skills</button>
+                </section>
+                <span className='miniCircle mini1'>
+                    <img src={PyIcon} alt='PyIcon'/>
+                    <p className='lang'>Python</p>
+                </span>
+                <span className='miniCircle mini2'>
+                    <img src={PandasIcon}  alt="pandasIcon"/>
+                    <p className='lang'>Pandas</p>
+                </span>
+                <span className='miniCircle mini3'>
+                    <img src={numpyIcon} alt="numpy_icon"/>
+                    <p className='lang'>Numpy</p>
+                </span>
+                <span className='miniCircle mini4'>
+                    <img src={sklearnIcon} alt="skLearnIcon"/>
+                    <p className='lang'>SciKit-Learn</p>
+                </span>
+                <span className='miniCircle mini5'>
+                <img src={regIcon} alt="reg_icon" />
+                    <p className='lang'>Regression Algorithms</p>
+                </span>
+                <span className='miniCircle mini6'>
+                <img src={classIcon} alt="class_icon" />
+                    <p className='lang'>Classification Algorithms</p>
+                </span>
+                <span className='miniCircle mini7'>
+                <img src={visualIcon} alt="visual_icon" />
+                    <p className='lang'>Data Visualization</p>
+                </span>
+                <span className='miniCircle mini8'>
+                <img src={classIcon} alt="class_icon" />
+                    <p className='lang'>Classification Algorithms </p>
+                </span>
+                
                 </figure>
 
             </div>
