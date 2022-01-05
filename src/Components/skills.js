@@ -19,6 +19,8 @@ import visualIcon from "./Media/Icons/DataVisual_56x56.jpg"
 class Skills extends Component{
     constructor(){
         super()
+        this.MLRef=React.createRef();
+        this.WebRef=React.createRef();
         this.state={
             mySkills:[
                 "React.js",
@@ -40,18 +42,35 @@ class Skills extends Component{
                 "SQL",
                 "HTML5",
                 "CSS3"
-            ]
+            ],
+            skillSection:"Web development toolbox"
         }
 
+    }
+    changeSkills=()=>{
+        if(this.state.skillSection==="Web development toolbox"){
+            this.MLRef.current.style.display="grid"
+            this.WebRef.current.style.display="none"
+            this.setState({
+                skillSection:"Machine Learning toolbox"
+            })            
+        }
+        else if(this.state.skillSection==="Machine Learning toolbox"){
+            this.MLRef.current.style.display="none"
+            this.WebRef.current.style.display="grid"
+            this.setState({
+                skillSection:"Web development toolbox"
+            })
+        }
     }
     render(){
         return(
             <div className="skillsDiv" id="skills">
                 <h1>My Skills</h1>
-                <h2>Web development Skills and toolbox</h2>
-                <figure className='mainCircleWeb'>
+                <h2>{this.state.skillSection}</h2>
+                <figure className='mainCircleWeb' ref={this.WebRef}>
                 <section className='mainCircleText'>
-                    <button className='skills-nav'>Show ML skills</button>
+                    <button className='skills-nav' onClick={this.changeSkills}>Show ML skills</button>
                 </section>
                 <span className='miniCircle mini1'>
                     <img src={reactIcon} alt='reactIcon'/>
@@ -87,9 +106,9 @@ class Skills extends Component{
                 </span>
                 </figure>
 
-                <figure className='mainCircleML'>
+                <figure className='mainCircleML' ref={this.MLRef}>
                 <section className='mainCircleText'>
-                    <button className='skills-nav'>Show Web skills</button>
+                    <button className='skills-nav' onClick={this.changeSkills}>Show Web skills</button>
                 </section>
                 <span className='miniCircle mini1'>
                     <img src={PyIcon} alt='PyIcon'/>
@@ -108,8 +127,8 @@ class Skills extends Component{
                     <p className='lang'>SciKit-Learn</p>
                 </span>
                 <span className='miniCircle mini5'>
-                <img src={regIcon} alt="reg_icon" />
-                    <p className='lang'>Regression Algorithms</p>
+                <img src={clusterIcon} alt="cluster_icon" />
+                    <p className='lang'>Data Clustering Algorithms</p>
                 </span>
                 <span className='miniCircle mini6'>
                 <img src={classIcon} alt="class_icon" />
@@ -120,8 +139,8 @@ class Skills extends Component{
                     <p className='lang'>Data Visualization</p>
                 </span>
                 <span className='miniCircle mini8'>
-                <img src={classIcon} alt="class_icon" />
-                    <p className='lang'>Classification Algorithms </p>
+                <img src={regIcon} alt="reg_icon" />
+                    <p className='lang'>Regression Algorithms</p>
                 </span>
                 
                 </figure>
