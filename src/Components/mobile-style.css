@@ -39,6 +39,7 @@
         height: 50px;
         position: fixed;
         background-color: white;
+        z-index: 2;
         
     }
     .sideNaveList a{
@@ -92,6 +93,110 @@
         width:60%;
         color:black;
         font-size:18px;
+    }
+
+    .skillsDiv{
+        min-height: 125vh;
+        background-color: #207FC1;
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        background-size: cover;
+        justify-content: center;
+    }
+    .skillsDiv h1{
+        color: white;
+        font-size: 30px;
+    }
+    .skillsDiv h2{
+        animation:animation 5s;
+        font-family: RowdiesRegular;
+        color: white;
+    }
+    .mainCircleWeb{
+        border-radius: 50%;
+        background:transparent;
+        display: grid;
+        margin: auto;
+        align-items:center;
+        justify-items: center;
+    }
+    .mainCircleML{
+        border-radius: 50%;
+        background:transparent;
+        margin: auto;
+        align-items:center;
+        justify-items: center;
+        display: none;
+    
+    }
+    .mainCircleText{
+        background-color:transparent;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        grid-area: 1/1/1/1;
+        justify-content: center;
+    }
+    .miniCircle{
+        background: white;
+        border-radius:50%;
+        width: 6vh;
+        height: 6vh;
+        grid-area: 2/1/1/1;
+    }
+    .miniCircle img{
+        width: 100%;
+        height: 100%;
+        border-radius:50%;
+    }
+    .miniCircle img:hover{
+        animation:verticalRotation 2.5s;
+        cursor:text;
+        border:2px solid blue;
+    }
+    
+    .mini1{
+        transform: translate(0,-25vh);
+    }
+    .mini2{
+        transform: translate(-17.68vh,-17.68vh);
+    }
+    .mini3{
+        transform: translate(-25vh,0vh);
+    
+    }
+    .mini4{
+        transform: translate(-17.68vh,17.68vh);
+    
+    }
+    .mini5{
+        transform: translate(0,25vh);
+    }
+    .mini6{
+        transform: translate(17.68vh,17.68vh);
+    }
+    .mini7{
+        transform: translate(25vh,0);
+    }
+    .mini8{
+        transform: translate(17.68vh,-17.68vh);
+    }
+    .lang, .skills-nav{
+        font-size: 70%;
+        margin: 15px 0;
+        color:white;
+    }
+    .skills-nav, .contactDiv button {
+        border-radius: 15px;
+        background: white ;
+        border:solid white 2px;
+        color: black;
+        box-shadow: 5px 0 10px 0 ;
+        font-family: "RowdiesRegular";
+    }
+    .lang:hover{
+        cursor: text;
     }
     .projectSubHeading{
         animation:animation 5s;

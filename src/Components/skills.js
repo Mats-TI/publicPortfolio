@@ -70,7 +70,7 @@ class Skills extends Component{
                 <h2>{this.state.skillSection}</h2>
                 <figure className='mainCircleWeb' ref={this.WebRef}>
                 <section className='mainCircleText'>
-                    <button className='skills-nav' onClick={this.changeSkills}>Show ML skills</button>
+                    <button className='skills-nav' onClick={this.changeSkills} title="Open Machine Learning toolbox">Show ML skills</button>
                 </section>
                 <span className='miniCircle mini1'>
                     <img src={reactIcon} alt='reactIcon'/>
@@ -108,7 +108,7 @@ class Skills extends Component{
 
                 <figure className='mainCircleML' ref={this.MLRef}>
                 <section className='mainCircleText'>
-                    <button className='skills-nav' onClick={this.changeSkills}>Show Web skills</button>
+                    <button className='skills-nav' onClick={this.changeSkills} title="Open Web development toolbox">Show Web dev skills</button>
                 </section>
                 <span className='miniCircle mini1'>
                     <img src={PyIcon} alt='PyIcon'/>
