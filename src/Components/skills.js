@@ -49,6 +49,7 @@ class Skills extends Component{
     }
     changeSkills=()=>{
         if(this.state.skillSection==="Web development toolbox"){
+            this.MLRef.current.style.animation="anime 3s"
             this.MLRef.current.style.display="grid"
             this.WebRef.current.style.display="none"
             this.setState({
@@ -56,6 +57,7 @@ class Skills extends Component{
             })            
         }
         else if(this.state.skillSection==="Machine Learning toolbox"){
+            this.WebRef.current.style.animation="anime 3s"
             this.MLRef.current.style.display="none"
             this.WebRef.current.style.display="grid"
             this.setState({

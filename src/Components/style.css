@@ -182,6 +182,7 @@ p{
     display: grid;
     align-items:center;
     justify-items: center;
+    animation: none;
     
 
 }
@@ -194,7 +195,8 @@ p{
     margin-top: 50px;
     align-items:center;
     justify-items: center;
-    display: none; 
+    display: none;
+    animation: none;
 
 }
 .mainCircleText{
