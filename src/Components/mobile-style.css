@@ -118,6 +118,7 @@
         background:transparent;
         display: grid;
         margin: auto;
+        width: 95%;
         align-items:center;
         justify-items: center;
     }
@@ -125,6 +126,7 @@
         border-radius: 50%;
         background:transparent;
         margin: auto;
+        width: 95%;
         align-items:center;
         justify-items: center;
         display: none;
@@ -163,7 +165,7 @@
         transform: translate(-17.68vh,-17.68vh);
     }
     .mini3{
-        transform: translate(-25vh,0vh);
+        transform: translate(-20vh,0vh);
     
     }
     .mini4{
@@ -171,13 +173,13 @@
     
     }
     .mini5{
-        transform: translate(0,25vh);
+        transform: translate(0,20vh);
     }
     .mini6{
         transform: translate(17.68vh,17.68vh);
     }
     .mini7{
-        transform: translate(25vh,0);
+        transform: translate(20vh,0);
     }
     .mini8{
         transform: translate(17.68vh,-17.68vh);
