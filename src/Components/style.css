@@ -74,6 +74,10 @@ border-bottom: blue 1px solid;
 .projectSubHeading{
     animation:animation 5s;
     font-family: RowdiesRegular;
+    margin-bottom:50px;
+}
+.projectSection a{
+
 }
 .back-to-top{
     width:50px;
@@ -269,19 +273,32 @@ p{
 }
 
 .projectSection{
-    display: grid;
-    grid-template-rows: 20% 80%;
-    grid-template-areas: none;
-    width:100%;
-    margin:50px auto;
+    display:flex;
+    flex-direction: column;
+    width:95%;
+    margin:10px auto;
+    padding-top: 50px;
+}
+.projectCard button{
+    border: 1px blue solid;
+    color: black;
+    background-color: white;
 
+}
+.projectCard:hover{
+    border:2px solid blue;
+    border-radius: 12px;
+    transform: scale(1);
 }
 .grid_projects{
     display: none;
 }
 .projectSection img{
     border: groove 10px skyblue;
-    width:30%;
+    width:200px;
+}
+.projectCard p{
+    font-size: 100%;
 }
 .projectDetails{
     animation: animation 5s;
@@ -303,9 +320,6 @@ p{
 }
 .slider-left div, .slider-right div{
     background-color:#207FC1;
-}
-.react-3d-carousel{
-    margin-top: 20px;
 }
 .contactDiv{
     min-height: 100vh;    
