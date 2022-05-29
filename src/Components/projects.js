@@ -15,19 +15,16 @@ class Projects extends Component{
         return(
             <div className='projectsDiv' id="ProID">
             <h1><span className="h1">My Projects</span></h1>
+            <h2 className="projectSubHeading">Browse through some of the web-applications and websites created...</h2>
             <section className='projectSection'>
-                <h2 className="projectSubHeading">Browse through some of the web-applications and websites created.<br /> Click on an icon to access an individual Project.</h2>
-                <Carousel cols={4} rows={1} loop >
-                    <Carousel.Item><Card image='catebzaLogo' desc='This is a desc'></Card></Carousel.Item>
-                    <Carousel.Item><a href="https://mats-ti.github.io/CatebzaTrading" target="_blank"><img src={catebzaLogo}/></a></Carousel.Item>
-                    <Carousel.Item><a href="https://mats-ti.github.io/gallery" target="_blank" ><img src={Gallery_img}/></a></Carousel.Item>
-                    <Carousel.Item><a href="https://mats-ti.github.io/DCGame" target="_blank"><img src={DCproject}/></a></Carousel.Item>
-                    
+                <Carousel cols={4} rows={1} loop>
+                    <Carousel.Item><Card techStack='React.js, Node.js' image={catebzaLogo} name='Catebza Trading' link='https://mats-ti.github.io/CatebzaTrading'></Card></Carousel.Item>
+                    <Carousel.Item><Card techStack='React.js, APIs' image={Gallery_img} name='Image Gallery' link='https://mats-ti.github.io/gallery'></Card></Carousel.Item>
+                    <Carousel.Item><Card techStack='JavaScript, HTML5, CSS3' image={DCproject} name='DC Quiz Game' link='https://mats-ti.github.io/DCGame'></Card></Carousel.Item>
                 </Carousel>
                 <div className="grid_projects">
                     <a href="https://mats-ti.github.io/CatebzaTrading" target="_blank"><img src={catebzaLogo}/></a>
                     <a href="https://mats-ti.github.io/gallery" target="_blank" ><img src={Gallery_img}/></a>
-                    
                     <a href="https://mats-ti.github.io/DCGame" target="_blank"><img src={DCproject}/></a>
                 </div>
             </section>

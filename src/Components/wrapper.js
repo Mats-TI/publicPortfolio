@@ -35,8 +35,8 @@ class Wrapper extends React.Component{
                 <img src={topIcon} alt="Back To Top" />
             </BackToTop>
             </div>
-            <Skills />
             <Projects />
+            <Skills />
             <Contact />
         
         </div>
