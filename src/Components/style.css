@@ -76,9 +76,6 @@ border-bottom: blue 1px solid;
     font-family: RowdiesRegular;
     margin-bottom:50px;
 }
-.projectSection a{
-
-}
 .back-to-top{
     width:50px;
 
@@ -297,11 +294,6 @@ p{
     background-color: white;
 
 }
-.jVJmF{
-    height: auto;
-    min-height: 100%;
-    padding-bottom: 20px;
-}
 .projectCard button:hover{
     background-color: grey;
 }
@@ -310,7 +302,7 @@ p{
     border-radius: 12px;
     transform: scale(1);
 }
-.grid_projects{
+.projects-mobile{
     display: none;
 }
 .projectCard p{
@@ -688,31 +680,50 @@ button{
         grid-template-areas: none;
         
     }
-    .grid_projects{
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        margin: 2% auto;
-
+    .projectCard{
+        box-shadow:2px 3px grey;
+        background-color: white;
+        width: 200px;
+        border-radius: 10px;
+        margin-bottom: 50px;
     }
-    .grid_projects a{
-        border:10px groove skyblue;
-        margin: 12px auto;
-        width:20%;   
+    .projectCard img{
+        width: 100%;
+        height: 125px;
+        border-radius: 10px;
     }
-
+    .projectCard button{
+        border: 1px grey solid;
+        color: black;
+        background-color: white;
+    
+    }
+    .projectCard button:hover{
+        background-color: grey;
+    }
+    .projectCard:hover{
+        border:2px solid grey;
+        border-radius: 12px;
+        transform: scale(1);
+    }.projects-desktop{
+        display: none;
+    }
+    .projects-mobile{
+        margin: 50px auto;
+    }
+    .projectCard p{
+        font-size: 1vw;
+        word-wrap: break-word;
+        height: 50%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
     .projectSection img{
-        
         width: 100%;
     }
     .projectDetails{
         animation: animation 5s;
         margin-top:35px;
-    }
-    .projectDetails a{
-        color: black;
-        font-family: serif;
-        font-size:20px    
     }
     .projectsDiv{
         min-height: calc(100vh);

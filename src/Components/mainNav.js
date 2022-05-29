@@ -22,19 +22,19 @@ class Nav extends React.Component{
 
 
     }
-    openMobileMenu=()=>{
+    openMobileMenu=async()=>{
         if(this.state.toggleMenu===true){
 
             this.sideNavRef.current.style.clipPath="circle(150% at 90% 10%)";
             this.openMenuRef.current.style.opacity="0.75"
-            this.setState({
+            await this.setState({
                 toggleMenu:false
             })
         }
         else{
             this.sideNavRef.current.style.clipPath="circle(0px at 100% 0%)";
             this.openMenuRef.current.style.opacity="1"
-            this.setState({
+            await this.setState({
                 toggleMenu:true
             })
             

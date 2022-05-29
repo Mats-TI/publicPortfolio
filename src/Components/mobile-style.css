@@ -256,44 +256,54 @@
     }
     p,h2{
         font-size: 15px;
-        
-        
     }
-
-    
     .projectSection{
-        
-        display: grid;
-        grid-template-rows: 10% 90%;
-        grid-template-areas: none;
-        
-    }
-    .grid_projects{
+        min-height: 100%;
         display: flex;
         flex-direction: column;
-        align-content: center;
-        margin: 2% auto;
-
+        width:95%;
+        margin:10px auto;
+        padding-top: 50px;
     }
-    .grid_projects a{
-        border:10px groove skyblue;
-        margin: 12px auto;
-        width:25%;   
+    .projectCard{
+        box-shadow:2px 3px grey;
+        background-color: white;
+        width: 150px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        border:2px solid grey;
     }
-
-    .projectSection img{
-        
+    .projectCard img{
         width: 100%;
+        height: 80px;
+        border-radius: 10px;
     }
-    .projectDetails{
-        animation: animation 5s;
-        margin-top:10px;
-        margin-bottom: 20px;
-    }
-    .projectDetails a{
+    .projectCard button{
+        border: 1px grey solid;
         color: black;
-        font-family: RowdiesRegular;
-        font-size:20px;    
+        background-color: white;
+        background-color: grey;
+        font-size: 13px;
+    }
+    .projectCard:hover{
+        border:2px solid grey;
+        border-radius: 12px;
+        transform: scale(1);
+    }
+    .projects-desktop{
+        display: none;
+    }
+    .projects-mobile{
+        margin: 0 auto;
+    }
+    .projectCard p{
+        word-wrap: break-word;
+        height: 50%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .projectSection img{
+        width: 100%;
     }
     .projectsDiv{
         min-height: 100vh;
@@ -311,7 +321,6 @@
     }
     
     .contactDiv{
-        
         padding-top: 80px;
         font-family: serif;
         background-color:#207FC1;

@@ -31,7 +31,7 @@ class Wrapper extends React.Component{
                 <p className="p1">Machine Learning Engineer</p>
 
             </div>
-            <BackToTop showAt={300}>
+            <BackToTop showAt={500}>
                 <img src={topIcon} alt="Back To Top" />
             </BackToTop>
             </div>
