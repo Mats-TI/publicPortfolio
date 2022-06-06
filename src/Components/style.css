@@ -430,7 +430,7 @@ button{
 }
 }
 /*Ipad Styling*/
-@media only screen and (max-width:1023px) and (min-width:700px){
+@media only screen and (max-width:1023px) and (min-width:400px){
 
     .sideNav{
         position: 0;
@@ -516,7 +516,8 @@ button{
     }
     .skillsDiv{
         min-height: 125vh;
-        background-color: #207FC1;
+        background-image:url("./Media/skillsBg.jpg");
+        background-size: 100vw 100vh;
         display: flex;
         flex-direction: column;
         padding-top: 50px;

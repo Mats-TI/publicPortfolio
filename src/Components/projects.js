@@ -30,7 +30,7 @@ class Projects extends Component{
                 <Card techStack='JavaScript, HTML5, CSS3' image={DCproject} name='DC Quiz Game' link='https://mats-ti.github.io/DCGame'></Card>
                 
                 </div>
-            </section>
+        </section>
             </div>
         )
     }
