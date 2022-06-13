@@ -80,9 +80,6 @@ class Skills extends Component{
                 <button className='skills-nav WebButton' onClick={this.changeSkills} title="Open Web development toolbox" ref={this.WebButton}>Show Web Dev toolbox</button>
                 <button className='skills-nav MLButton' onClick={this.changeSkills} title="Open Machine Learning toolbox" ref={this.MLButton}>Show Machine Learning toolbox</button>
                 <figure className='mainCircleWeb' ref={this.WebRef}>
-                <section className='mainCircleText'>
-                    
-                </section>
                 <span className='miniCircle mini1'>
                     <img src={reactIcon} alt='reactIcon'/>
                     <p className='lang'>React.js</p>
