@@ -21,6 +21,8 @@ class Skills extends Component{
         super()
         this.MLRef=React.createRef();
         this.WebRef=React.createRef();
+        this.WebButton=React.createRef();
+        this.MLButton=React.createRef();
         this.state={
             mySkills:[
                 "React.js",
@@ -47,22 +49,27 @@ class Skills extends Component{
         }
 
     }
-    changeSkills=()=>{
+    changeSkills=async()=>{
         if(this.state.skillSection==="Web development toolbox"){
+            await this.setState({
+                skillSection:"Machine Learning toolbox"
+            }) 
             this.MLRef.current.style.animation="anime 3s"
             this.MLRef.current.style.display="grid"
             this.WebRef.current.style.display="none"
-            this.setState({
-                skillSection:"Machine Learning toolbox"
-            })            
+            this.WebButton.current.style.display="block"
+            this.MLButton.current.style.display="none"
+           
         }
         else if(this.state.skillSection==="Machine Learning toolbox"){
+            await this.setState({
+                skillSection:"Web development toolbox"
+            })
             this.WebRef.current.style.animation="anime 3s"
             this.MLRef.current.style.display="none"
             this.WebRef.current.style.display="grid"
-            this.setState({
-                skillSection:"Web development toolbox"
-            })
+            this.WebButton.current.style.display='none'
+            this.MLButton.current.style.display='block'
         }
     }
     render(){
@@ -70,9 +77,11 @@ class Skills extends Component{
             <div className="skillsDiv" id="skills">
                 <h1>My Skills</h1>
                 <h2>{this.state.skillSection}</h2>
+                <button className='skills-nav WebButton' onClick={this.changeSkills} title="Open Web development toolbox" ref={this.WebButton}>Show Web Dev toolbox</button>
+                <button className='skills-nav MLButton' onClick={this.changeSkills} title="Open Machine Learning toolbox" ref={this.MLButton}>Show Machine Learning toolbox</button>
                 <figure className='mainCircleWeb' ref={this.WebRef}>
                 <section className='mainCircleText'>
-                    <button className='skills-nav' onClick={this.changeSkills} title="Open Machine Learning toolbox">Show ML skills</button>
+                    
                 </section>
                 <span className='miniCircle mini1'>
                     <img src={reactIcon} alt='reactIcon'/>
@@ -109,8 +118,7 @@ class Skills extends Component{
                 </figure>
 
                 <figure className='mainCircleML' ref={this.MLRef}>
-                <section className='mainCircleText'>
-                    <button className='skills-nav' onClick={this.changeSkills} title="Open Web development toolbox">Show Web dev skills</button>
+                <section className='mainCircleText'>     
                 </section>
                 <span className='miniCircle mini1'>
                     <img src={PyIcon} alt='PyIcon'/>

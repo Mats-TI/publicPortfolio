@@ -102,15 +102,17 @@
         flex-direction: column;
         background-size: cover;
         justify-content: center;
+        padding-top: 50px;
     }
     .skillsDiv h1{
         color: white;
-        font-size: 30px;
+        font-size: 20px;
     }
     .skillsDiv h2{
         animation:animation 5s;
         font-family: RowdiesRegular;
         color: white;
+        font-size:18px;
     }
     .mainCircleWeb{
         border-radius: 50%;
@@ -187,6 +189,16 @@
         font-size: 70%;
         margin: 15px 0;
         color:white;
+    }
+    .skills-nav{
+        width: 60%;
+        margin: 15px auto;
+    }
+    .WebButton{
+        display: none;
+    }
+    .MLButton{
+        display: block;
     }
     .skills-nav, .contactDiv button {
         border-radius: 15px;

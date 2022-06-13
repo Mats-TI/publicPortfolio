@@ -6,7 +6,7 @@ const Card=function(props){
             <img src={props.image} alt="project Banner" />
             <h3 className="projectTitle">{props.name}</h3>
             <h4>Tech Stack:</h4>
-            <p className='desc'>{props.techStack}</p>
+            <h5 className='desc'>{props.techStack}</h5>
             <button><a href={props.link} target='blank'>Go to site<i className="fa fa-arrow-right"></i></a></button>
         </div>
     )
