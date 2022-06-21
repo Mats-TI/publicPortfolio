@@ -16,8 +16,7 @@ class Nav extends React.Component{
         this.sideNavRef=React.createRef();
         this.openMenuRef=React.createRef();
         this.state={
-            skillDropDown: false,
-            toggleMenu:false
+            toggleMenu:true
         }
 
 
@@ -27,6 +26,8 @@ class Nav extends React.Component{
 
             this.sideNavRef.current.style.clipPath="circle(150% at 90% 10%)";
             this.openMenuRef.current.style.opacity="0.75"
+            this.openMenuRef.current.style.backgroundColor="grey"
+            this.openMenuRef.current.style.borderRadius='50%'
             await this.setState({
                 toggleMenu:false
             })
@@ -34,6 +35,7 @@ class Nav extends React.Component{
         else{
             this.sideNavRef.current.style.clipPath="circle(0px at 100% 0%)";
             this.openMenuRef.current.style.opacity="1"
+            this.openMenuRef.current.style.backgroundColor='transparent'
             await this.setState({
                 toggleMenu:true
             })

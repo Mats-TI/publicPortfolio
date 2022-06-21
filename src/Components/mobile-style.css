@@ -33,6 +33,8 @@
         float: right;
         margin:15px 25px;
         height:30px;
+        background-color: transparent;
+        border-radius: 0;
     }
     .topNavMobile{
         width: 100%;
