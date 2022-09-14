@@ -94,7 +94,7 @@ class Contact extends React.Component{
         //if formErrors evaluates to false, proceed to make an http call.
         if (!formErrors){
 
-        axios.post("https://still-dusk-29985.herokuapp.com/api/forms",this.state)
+        axios.post("https://portfolioserver.onrender.com/api/forms",this.state)
         .then((res)=>{
             console.log(res);
         })
